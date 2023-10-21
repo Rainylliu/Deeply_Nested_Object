@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,
+html,
+.main {
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+[data-link] {
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.022em;
+    display: inline-block;
+    padding: 8px 20px;
+    font-weight: 300;
+}
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    border: 1px solid whitesmoke;
+    margin: -15px 0px 0px -15px;
+    transition: all 0.2s ease-out;
+}
+.cursor .cursor_ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    margin: -2px 0px 0px -2px;
+    transition: all 0.4s ease-out;
+}
+.cursor .hover {
+    border-radius: 2px;
+}
+.cursor .hover .cursor_ball {
+    left: 10px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navbar a {
+    font-family: 'Signika', sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+.story {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0.5%;
+}
+.card_1 {
+    width: 300px;
+    height: 360px;
+    position: relative;
+    margin-right: 60px;
+}
+.cover_1,
+.back_1 {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(180, 179, 179, 0.745);
+    width: 300px;
+    height: 360px;
+    font-size: large;
+    font-weight: 200;
+    color: azure;
+    text-align: justify;
+    padding: 30px 20px;
+    backface-visibility: hidden; 
+    transition: all .25s; 
+    font-family: 'Signika', sans-serif;
+    /* margin-left: 300px;
+    margin-top: 50px; */
+}
+.cover_1,
+.back_1 h4{
+    text-align: center;
+}
+.cover_1 img{
+    width: 250px;
+    margin-top: 30px;
+}
+.back_1 {
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: rotateY(-180deg);
+}
+/* .card_1:hover .cover_1{
+    transform: rotateY(180deg);
+}
+.card_1:hover .back_1{
+    transform: rotateY(0deg);
+} */
+
+.card_2 {
+    width: 300px;
+    height: 360px;
+    position: relative;
+    margin-right: 60px;
+}
+.cover_2,
+.back_2 {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(180, 179, 179, 0.745);
+    width: 300px;
+    height: 360px;
+    font-size: large;
+    font-weight: 200;
+    color: azure;
+    text-align: justify;
+    padding: 30px 20px;
+    backface-visibility: hidden; 
+    transition: all .25s; 
+    font-family: 'Signika', sans-serif;
+}
+.cover_2,
+.back_2 h4{
+    text-align: center;
+}
+.cover_2 img{
+    width: 250px;
+    margin-top: 30px;
+}
+.back_2 {
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: rotateY(-180deg);
+}
+/* .card_2:hover .cover_2{
+    transform: rotateY(180deg);
+}
+.card_2:hover .back_2{
+    transform: rotateY(0deg);
+} */
+
+.card_3 {
+    width: 300px;
+    height: 360px;
+    position: relative;
+}
+.cover_3,
+.back_3 {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(180, 179, 179, 0.745);
+    width: 300px;
+    height: 360px;
+    font-size: large;
+    font-weight: 200;
+    color: azure;
+    text-align: justify;
+    padding: 30px 20px;
+    backface-visibility: hidden; 
+    transition: all .25s; 
+    font-family: 'Signika', sans-serif;
+}
+.cover_3,
+.back_3 h4{
+    text-align: center;
+}
+.cover_3 img{
+    width: 250px;
+    margin-top: 30px;
+}
+.back_3 {
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: rotateY(-180deg);
+}
+/* .card_3:hover .cover_3{
+    transform: rotateY(180deg);
+}
+.card_3:hover .back_3{
+    transform: rotateY(0deg);
+} */
+.habit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.card_4 {
+    width: 300px;
+    height: 360px;
+    position: relative;
+    margin-right: 60px;
+}
+.cover_4,
+.back_4 {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(180, 179, 179, 0.745);
+    width: 300px;
+    height: 360px;
+    font-size: large;
+    font-weight: 200;
+    color: azure;
+    text-align: justify;
+    padding: 30px 20px;
+    backface-visibility: hidden; 
+    transition: all .25s; 
+    font-family: 'Signika', sans-serif;
+    /* margin-left: 300px;
+    margin-top: 50px; */
+}
+.cover_4,
+.back_4 h4{
+    text-align: center;
+}
+.cover_4 img{
+    width: 250px;
+    margin-top: 30px;
+}
+.back_4 {
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: rotateY(-180deg);
+}
+/* .card_4:hover .cover_4{
+    transform: rotateY(180deg);
+}
+.card_4:hover .back_4{
+    transform: rotateY(0deg);
+} */
+
+.card_5 {
+    width: 300px;
+    height: 360px;
+    position: relative;
+    margin-right: 60px;
+}
+.cover_5,
+.back_5 {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(180, 179, 179, 0.745);
+    width: 300px;
+    height: 360px;
+    font-size: large;
+    font-weight: 200;
+    color: azure;
+    text-align: justify;
+    padding: 30px 20px;
+    backface-visibility: hidden; 
+    transition: all .25s; 
+    font-family: 'Signika', sans-serif;
+}
+.cover_5,
+.back_5 h4{
+    text-align: center;
+}
+.cover_5 img{
+    width: 250px;
+    margin-top: 30px;
+}
+.back_5 {
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: rotateY(-180deg);
+}
+/* .card_5:hover .cover_5{
+    transform: rotateY(180deg);
+}
+.card_5:hover .back_5{
+    transform: rotateY(0deg);
+} */
+
+.card_6 {
+    width: 300px;
+    height: 360px;
+    position: relative;
+}
+.cover_6,
+.back_6 {
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(180, 179, 179, 0.745);
+    width: 300px;
+    height: 360px;
+    font-size: large;
+    font-weight: 200;
+    color: azure;
+    text-align: justify;
+    padding: 30px 20px;
+    backface-visibility: hidden; 
+    transition: all .25s; 
+    font-family: 'Signika', sans-serif;
+}
+.cover_6,
+.back_6 h4{
+    text-align: center;
+}
+.cover_6 img{
+    width: 250px;
+    margin-top: 30px;
+}
+.back_6 {
+    background-color: rgba(128, 128, 128, 0.5);
+    transform: rotateY(-180deg);
+}
+/* .card_6:hover .cover_6{
+    transform: rotateY(180deg);
+}
+.card_6:hover .back_6{
+    transform: rotateY(0deg);
+} */
